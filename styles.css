@@ -440,15 +440,18 @@ img {
     overflow: hidden;
     font-size: 0.88rem;
     border-left: 2px solid var(--accent-cyan);
+    background: #0b111e !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    box-shadow: var(--shadow-md);
 }
 
 .visual-header {
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.3) !important;
     padding: 0.6rem 1rem;
     display: flex;
     align-items: center;
     gap: 6px;
-    border-bottom: 1px solid var(--border-color);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
 }
 
 .visual-header .dot {
@@ -463,7 +466,7 @@ img {
 
 .visual-title {
     font-family: var(--font-mono);
-    color: var(--text-muted);
+    color: rgba(255, 255, 255, 0.4) !important;
     font-size: 0.75rem;
     margin-left: 10px;
 }
@@ -471,7 +474,7 @@ img {
 .visual-body {
     padding: 1.2rem;
     color: #a9b1d6;
-    background: rgba(5, 8, 17, 0.35);
+    background: #06090f !important;
 }
 
 .visual-body .keyword { color: #f7768e; }
