@@ -85,9 +85,9 @@ document.addEventListener('DOMContentLoaded', () => {
        ========================================================================== */
     const typingSpan = document.getElementById('typing-text');
     const phrases = [
-        "Machine Learning Models",
-        "Scalable Web Applications",
-        "DevOps Pipelines",
+        "Time-Series Forecasting Pipelines",
+        "Machine Learning Classification Models",
+        "Data Preprocessing & EDA Workflows",
         "Data-Driven Solutions"
     ];
     let phraseIndex = 0;
@@ -201,40 +201,46 @@ document.addEventListener('DOMContentLoaded', () => {
     const terminalCommands = {
         help: `
             <span class="text-cyan">Available commands:</span><br>
-            - <span class="text-white">about</span>       : Brief introduction of my background<br>
-            - <span class="text-white">skills</span>      : Technical skills overview<br>
-            - <span class="text-white">experience</span>  : Academic & corporate internships list<br>
-            - <span class="text-white">projects</span>    : Details on key code systems built<br>
-            - <span class="text-white">messages</span>    : View messages submitted via contact form<br>
-            - <span class="text-white">contact</span>     : Direct contacts and channels<br>
-            - <span class="text-white">clear</span>       : Empty the shell terminal logs
+            - <span class="text-white">about</span>        : Brief introduction of my background<br>
+            - <span class="text-white">skills</span>       : Technical skills overview<br>
+            - <span class="text-white">experience</span>   : Corporate & research internships list<br>
+            - <span class="text-white">projects</span>     : Details on Machine Learning systems<br>
+            - <span class="text-white">achievements</span> : Algorithmic metrics & credentials<br>
+            - <span class="text-white">messages</span>     : View messages submitted via contact form<br>
+            - <span class="text-white">codolio</span>      : View Codolio coding profile and metrics<br>
+            - <span class="text-white">contact</span>      : Direct contacts and channels<br>
+            - <span class="text-white">clear</span>        : Empty the shell terminal logs
         `,
         about: `
-            <span class="text-green">Bio:</span> Raghav Goyal is a final year B.Tech student in Computer Science & Engineering 
-            (Data Science) at SKIT Jaipur. He specializes in designing robust machine learning classifications 
-            and scalable REST API platforms, balancing advanced analytic structures with premium web designs.
+            <span class="text-green">Bio:</span> Raghav Goyal is a B.Tech student in Computer Science & Engineering 
+            (Data Science) at SKIT Jaipur (CGPA: 8.8). He specializes in building Python data processing workflows, 
+            time-series demand forecasting pipelines (93.72% R²), and machine learning signal classification models.
         `,
         skills: `
-            <span class="text-green">Languages:</span> C++, Python, JavaScript, SQL<br>
-            <span class="text-green">Web Dev:</span> Node.js, Express.js, MongoDB, REST APIs, HTML/CSS<br>
-            <span class="text-green">DevOps & Cloud:</span> AWS, Azure, Docker, Kubernetes, Linux, Git/GitHub, CI/CD<br>
-            <span class="text-green">ML/DS Libraries:</span> Scikit-learn, NumPy, Pandas, Matplotlib
+            <span class="text-green">Languages:</span> C++, Python, SQL<br>
+            <span class="text-green">CS Fundamentals:</span> Data Structures & Algorithms, OOP, DBMS<br>
+            <span class="text-green">Machine Learning:</span> Scikit-learn, Supervised & Unsupervised Learning, Feature Engineering, Model Evaluation, Cross Validation<br>
+            <span class="text-green">Data Analysis:</span> Pandas, NumPy, EDA, Data Cleaning, Data Visualization<br>
+            <span class="text-green">Databases:</span> MySQL<br>
+            <span class="text-green">Tools:</span> Git, GitHub, Jupyter, Antigravity, VS Code
         `,
         experience: `
-            1. <span class="text-white">Celebal Technologies</span> (May 2026 -- Present)<br>
-               Role: Celebal Excellence Intern (CEI)<br>
-               Focus: Emerging technologies training and database scaling pipelines.<br><br>
-            2. <span class="text-white">Svaarogym Medical Devices (MNIT)</span> (Jun 2025 -- Jul 2025)<br>
+            1. <span class="text-white">Celebal Technologies</span> (May 2026 – July 2026, Jaipur)<br>
+               Role: Data Science Intern<br>
+               Focus: Python data processing workflows, modular ML preprocessing pipelines, EDA.<br><br>
+            2. <span class="text-white">Svaarogym Medical Devices Pvt. Ltd. (MNIT)</span> (June 2025 – July 2025, Jaipur)<br>
                Role: Machine Learning Intern<br>
-               Focus: ECG/EMG/GSR signals preprocessing, SVM model classification.<br><br>
-            3. <span class="text-white">Kistechno Software</span> (Jul 2024 -- Aug 2024)<br>
-               Role: Web Development Intern<br>
-               Focus: Front-end engineering, modular layouts, responsive UI optimizations.
+               Focus: Physiological signal analysis, feature extraction, classification model evaluation.
         `,
         projects: `
-            1. <span class="text-cyan">Fork & Flames</span>: Full-Stack Restaurant system containerized in Docker, running REST APIs via Express.js/MongoDB.<br>
-            2. <span class="text-cyan">PainMeter</span>: Automated pain level classifier reaching 81% accuracy utilizing signal processing and SVM/PCA.<br>
-            3. <span class="text-cyan">Churn Classifier</span>: Customer retention analysis models investigating key user churning trends in Python.
+            1. <span class="text-cyan">Multi-Series Retail Demand Forecasting</span>: Forecasted 500 store-item combinations using XGBoost/LightGBM (93.72% R²).<br>
+            2. <span class="text-cyan">Customer Churn Prediction</span>: ColumnTransformer pipeline & Precision-Recall optimization (Recall: 70.0% -> 87.5%).<br>
+            3. <span class="text-cyan">PainMeter – Pain Assessment</span>: Machine learning pipeline for physiological signal classification.
+        `,
+        achievements: `
+            1. <span class="text-white">Algorithmic Proficiency:</span> Solved 500+ DSA problems across LeetCode & GeeksforGeeks.<br>
+            2. <span class="text-white">Professional Credential:</span> Earned HackerRank SQL Certification.<br>
+            3. <span class="text-white">Leadership & Teamwork:</span> Coordinated college annual fest operations & logistics.
         `,
         contact: `
             <span class="text-cyan">Direct Channels:</span><br>
@@ -242,6 +248,12 @@ document.addEventListener('DOMContentLoaded', () => {
             - <span class="text-white">Phone:</span> +91-6375498396<br>
             - <span class="text-white">GitHub:</span> <a href="https://github.com/RaghavGoyal6046" target="_blank" class="text-green">github.com/RaghavGoyal6046</a><br>
             - <span class="text-white">LinkedIn:</span> <a href="https://linkedin.com/in/raghav-goyal-2b6245326" target="_blank" class="text-green">linkedin.com/in/raghav-goyal-2b6245326</a>
+        `,
+        codolio: `
+            <span class="text-green">Codolio Profile:</span> Aggregates competitive programming data & metrics.<br>
+            - <span class="text-white">Profile URL:</span> <a href="https://codolio.com/profile/RaghavGoyal5105/card" target="_blank" class="text-cyan">codolio.com/profile/RaghavGoyal5105</a><br>
+            - <span class="text-white">Total Solved:</span> 500+ Problems (across platforms)<br>
+            - <span class="text-white">Skills:</span> Data Structures & Algorithms, Problem Solving, SQL
         `,
         messages: () => {
             const list = JSON.parse(localStorage.getItem('portfolio_messages') || '[]');

@@ -623,21 +623,68 @@ img {
     color: var(--text-muted);
 }
 
+.education-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.edu-item {
+    padding: 1.25rem;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    transition: var(--transition);
+}
+
+.edu-item:hover {
+    border-color: var(--accent-cyan);
+    background: rgba(59, 130, 246, 0.04);
+    transform: translateY(-2px);
+}
+
+.edu-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 0.4rem;
+}
+
+.edu-item-header h4 {
+    font-family: var(--font-heading);
+    font-size: 1.05rem;
+    color: var(--text-primary);
+    font-weight: 600;
+    line-height: 1.35;
+}
+
+.edu-badge {
+    font-family: var(--font-heading);
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: var(--accent-cyan);
+    background: rgba(59, 130, 246, 0.1);
+    border: 1px solid rgba(59, 130, 246, 0.25);
+    padding: 0.25rem 0.65rem;
+    border-radius: 20px;
+    white-space: nowrap;
+}
+
 .edu-degree {
     display: block;
-    font-family: var(--font-heading);
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: var(--text-primary);
-    margin-bottom: 0.5rem;
+    font-family: var(--font-sans);
+    font-size: 0.92rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    margin-bottom: 0.4rem;
 }
 
 .edu-meta {
     display: flex;
-    gap: 1.5rem;
-    font-size: 0.85rem;
+    gap: 1.2rem;
+    font-size: 0.82rem;
     color: var(--text-muted);
-    margin-bottom: 1.5rem;
 }
 
 .edu-meta i {
@@ -1092,6 +1139,147 @@ img {
 }
 
 /* ==========================================================================
+   CODING PROFILE SECTION
+   ========================================================================== */
+.coding-profile-content {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 2.5rem;
+    align-items: stretch;
+}
+
+.codolio-card-container {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.codolio-card-header {
+    background: rgba(0, 0, 0, 0.25);
+    padding: 0.6rem 1.2rem;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.codolio-card-header .dot-group {
+    display: flex;
+    gap: 6px;
+    margin-right: 15px;
+}
+
+.codolio-card-header .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.codolio-card-header .dot.red { background: #ff5f56; }
+.codolio-card-header .dot.yellow { background: #ffbd2e; }
+.codolio-card-header .dot.green { background: #27c93f; }
+
+.codolio-card-title {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+.codolio-card-body {
+    padding: 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.15);
+    flex-grow: 1;
+}
+
+.codolio-img-wrapper {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+    max-width: 100%;
+}
+
+.codolio-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: var(--transition);
+    display: block;
+}
+
+.codolio-img-wrapper:hover .codolio-img {
+    transform: scale(1.02);
+}
+
+.codolio-img-wrapper::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(var(--accent-cyan-rgb), 0.08) 0%, rgba(var(--accent-purple-rgb), 0.08) 100%);
+    opacity: 0;
+    transition: var(--transition);
+    pointer-events: none;
+}
+
+.codolio-img-wrapper:hover::after {
+    opacity: 1;
+}
+
+.coding-profile-info {
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.coding-profile-info h3 {
+    font-family: var(--font-heading);
+    font-size: 1.45rem;
+    color: var(--text-primary);
+    margin-bottom: 1.2rem;
+    font-weight: 700;
+}
+
+.coding-profile-info p {
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.coding-features {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-bottom: 2rem;
+}
+
+.coding-features li {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+}
+
+.coding-features li i {
+    font-size: 1.1rem;
+}
+
+.coding-cta {
+    display: flex;
+    gap: 1rem;
+}
+
+/* ==========================================================================
    INTERACTIVE TERMINAL SIMULATOR SECTION
    ========================================================================== */
 .terminal-container {
@@ -1440,6 +1628,15 @@ textarea.form-input ~ .form-label {
     
     .contact-grid {
         grid-template-columns: 1fr;
+    }
+    
+    .coding-profile-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .coding-profile-info {
+        padding: 1.8rem;
     }
 }
 

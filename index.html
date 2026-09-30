@@ -37,6 +37,8 @@
                     <li><a href="#skills" class="nav-link">Skills</a></li>
                     <li><a href="#experience" class="nav-link">Experience</a></li>
                     <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                    <li><a href="#coding-profile" class="nav-link">Codolio</a></li>
                     <li><a href="#terminal" class="nav-link">Terminal</a></li>
                     <li><a href="#contact" class="nav-link">Contact</a></li>
                     <li class="theme-toggle-wrapper">
@@ -60,7 +62,7 @@
                         I build <span id="typing-text"></span><span class="typing-cursor">|</span>
                     </h2>
                     <p class="hero-description">
-                        B.Tech Student in Computer Science & Engineering (Data Science) specializing in Machine Learning, Full-Stack Web Development, and DevOps automation. Passionate about solving complex data problems and building scalable software architectures.
+                        B.Tech Student in Computer Science & Engineering (Data Science) specializing in Machine Learning, Time-Series Forecasting, and Data Analytics pipelines. Passionate about solving complex data problems and engineering robust predictive models.
                     </p>
                     <div class="hero-socials">
                         <a href="https://www.linkedin.com/in/raghav-goyal-2b6245326/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
@@ -70,7 +72,7 @@
                         <a href="tel:+916375498396" class="social-icon" aria-label="Phone"><i class="fas fa-phone"></i></a>
                     </div>
                     <div class="hero-ctas">
-                        <a href="#projects" class="btn btn-primary">Explore My Work</a>
+                        <a href="#projects" class="btn btn-primary">Explore Projects</a>
                         <a href="#contact" class="btn btn-secondary">Get In Touch</a>
                     </div>
                 </div>
@@ -83,17 +85,19 @@
                             <span class="visual-title">index.py</span>
                         </div>
                         <div class="visual-body font-mono">
+                            <p><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</p>
                             <p><span class="keyword">import</span> numpy <span class="keyword">as</span> np</p>
                             <p><span class="keyword">import</span> sklearn <span class="keyword">as</span> sk</p>
-                            <p class="indent"><span class="keyword">class</span> <span class="class-name">Developer</span>:</p>
+                            <br>
+                            <p class="indent"><span class="keyword">class</span> <span class="class-name">DataScientist</span>:</p>
                             <p class="indent-2">def <span class="func-name">__init__</span>(self):</p>
                             <p class="indent-3">self.name = <span class="string">"Raghav Goyal"</span></p>
-                            <p class="indent-3">self.role = <span class="string">"Data Science & Web Dev"</span></p>
-                            <p class="indent-3">self.gpa = <span class="number">8.78</span></p>
-                            <p class="indent-3">self.code_solved = <span class="number">400</span></p>
+                            <p class="indent-3">self.role = <span class="string">"Data Science & ML"</span></p>
+                            <p class="indent-3">self.cgpa = <span class="number">8.8</span></p>
+                            <p class="indent-3">self.dsa_solved = <span class="number">500</span></p>
                             <br>
-                            <p class="indent-2">def <span class="func-name">innovate</span>(self):</p>
-                            <p class="indent-3">return <span class="string">"Building data-driven pipelines & systems"</span></p>
+                            <p class="indent-2">def <span class="func-name">predict</span>(self):</p>
+                            <p class="indent-3">return <span class="string">"Building robust ML & forecasting pipelines"</span></p>
                         </div>
                     </div>
                 </div>
@@ -115,12 +119,15 @@
                 </div>
                 <div class="about-grid">
                     <div class="about-bio glass">
-                        <h3>Passionate Data Scientist & Developer</h3>
+                        <h3>Data Science & Machine Learning Specialist</h3>
                         <p>
-                            Currently pursuing B.Tech in Computer Science and Engineering with a specialization in Data Science, I bridges the gap between analytical machine learning systems and modern full-stack web applications. I focus on creating clean backend services, setting up efficient CI/CD deployment pipelines, and performing deep statistical analyses.
+                            Currently pursuing B.Tech in Computer Science and Engineering with a specialization in Data Science at SKIT Jaipur (CGPA: 8.8), I focus on building data processing workflows, developing modular machine learning pipelines, and performing deep statistical analyses.
                         </p>
                         <p>
-                            With experience working as a Machine Learning intern analyzing signal datasets and a Web Development intern building responsive products, I excel at solving multi-disciplinary challenges. Outside of academic courses, I am an active competitive programmer, having solved over 400+ data structure and algorithm challenges.
+                            My experience includes Data Science and Machine Learning internships at Celebal Technologies and Svaarogym Medical Devices (MNIT), where I engineered multi-series demand forecasting models, biomedical signal processing workflows, and predictive classification algorithms.
+                        </p>
+                        <p>
+                            Outside of academic courses, I am an active competitive programmer with over 500+ Data Structures & Algorithms problems solved across LeetCode and GeeksforGeeks, and hold the HackerRank SQL Professional Certification.
                         </p>
                     </div>
                     <div class="about-education glass">
@@ -128,26 +135,44 @@
                             <i class="fas fa-graduation-cap edu-icon"></i>
                             <div>
                                 <h3>Education</h3>
-                                <p class="edu-sub">Swami Keshvanand Institute of Technology, Management & Gramothan (SKIT)</p>
+                                <p class="edu-sub">Academic Background & Credentials</p>
                             </div>
                         </div>
-                        <div class="education-details">
-                            <span class="edu-degree">B.Tech in Computer Science & Engineering (Data Science)</span>
-                            <div class="edu-meta">
-                                <span><i class="fas fa-map-marker-alt"></i> Jaipur, India</span>
-                                <span><i class="fas fa-calendar-alt"></i> 2023 -- 2027</span>
+                        <div class="education-list">
+                            <!-- SKIT -->
+                            <div class="edu-item">
+                                <div class="edu-item-header">
+                                    <h4>Swami Keshvanand Institute of Technology, Management & Gramothan (SKIT)</h4>
+                                    <span class="edu-badge">CGPA: 8.8</span>
+                                </div>
+                                <span class="edu-degree">B.Tech in Computer Science & Engineering (Data Science)</span>
+                                <div class="edu-meta">
+                                    <span><i class="fas fa-map-marker-alt"></i> Jaipur</span>
+                                    <span><i class="fas fa-calendar-alt"></i> 2023 – 2027</span>
+                                </div>
                             </div>
-                            <div class="edu-gpa">
-                                <span class="gpa-label">Current CGPA</span>
-                                <span class="gpa-val">8.78 / 10</span>
+                            
+                            <!-- Career Point School -->
+                            <div class="edu-item">
+                                <div class="edu-item-header">
+                                    <h4>Career Point School (RBSE)</h4>
+                                    <span class="edu-badge">88.2%</span>
+                                </div>
+                                <span class="edu-degree">Class XII | Science</span>
+                                <div class="edu-meta">
+                                    <span><i class="fas fa-calendar-alt"></i> 2022</span>
+                                </div>
                             </div>
-                            <div class="edu-courses">
-                                <h4>Key Core Subjects</h4>
-                                <div class="course-tags">
-                                    <span class="tag">Data Structures & Algorithms</span>
-                                    <span class="tag">Object-Oriented Programming (OOP)</span>
-                                    <span class="tag">Database Management Systems (DBMS)</span>
-                                    <span class="tag">Operating Systems</span>
+
+                            <!-- Alpha English Sr. Sec. School -->
+                            <div class="edu-item">
+                                <div class="edu-item-header">
+                                    <h4>Alpha English Sr. Sec. School (RBSE)</h4>
+                                    <span class="edu-badge">91.50%</span>
+                                </div>
+                                <span class="edu-degree">Class X</span>
+                                <div class="edu-meta">
+                                    <span><i class="fas fa-calendar-alt"></i> 2020</span>
                                 </div>
                             </div>
                         </div>
@@ -160,99 +185,90 @@
         <section id="skills" class="section skills-section">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-subtitle">What I Do</span>
+                    <span class="section-subtitle">What I Know</span>
                     <h2 class="section-title">Technical Skills</h2>
                     <div class="section-underline"></div>
                 </div>
                 <div class="skills-grid">
-                    <!-- Languages Card -->
+                    <!-- Programming Languages -->
                     <div class="skill-card glass">
                         <div class="skill-card-header">
-                            <i class="fas fa-code-branch icon-languages"></i>
-                            <h3>Languages</h3>
+                            <i class="fas fa-code icon-languages"></i>
+                            <h3>Programming Languages</h3>
                         </div>
                         <div class="skill-list">
                             <span class="skill-badge">C++</span>
                             <span class="skill-badge">Python</span>
-                            <span class="skill-badge">JavaScript</span>
                             <span class="skill-badge">SQL</span>
                         </div>
                     </div>
 
-                    <!-- Web Dev Card -->
+                    <!-- CS Fundamentals -->
                     <div class="skill-card glass">
                         <div class="skill-card-header">
-                            <i class="fas fa-laptop-code icon-web"></i>
-                            <h3>Web Development</h3>
+                            <i class="fas fa-brain icon-web"></i>
+                            <h3>Computer Science Fundamentals</h3>
                         </div>
                         <div class="skill-list">
-                            <span class="skill-badge">HTML5</span>
-                            <span class="skill-badge">CSS3</span>
-                            <span class="skill-badge">JavaScript (ES6)</span>
-                            <span class="skill-badge">Node.js</span>
-                            <span class="skill-badge">Express.js</span>
-                            <span class="skill-badge">REST APIs</span>
+                            <span class="skill-badge">Data Structures & Algorithms</span>
+                            <span class="skill-badge">Object-Oriented Programming (OOP)</span>
+                            <span class="skill-badge">Database Management Systems</span>
                         </div>
                     </div>
 
-                    <!-- Cloud & DevOps Card -->
+                    <!-- Machine Learning -->
                     <div class="skill-card glass">
                         <div class="skill-card-header">
-                            <i class="fas fa-cloud icon-devops"></i>
-                            <h3>Cloud & DevOps</h3>
+                            <i class="fas fa-robot icon-devops"></i>
+                            <h3>Machine Learning</h3>
                         </div>
                         <div class="skill-list">
-                            <span class="skill-badge">AWS Fundamentals</span>
-                            <span class="skill-badge">Azure Fundamentals</span>
-                            <span class="skill-badge">Docker</span>
-                            <span class="skill-badge">Kubernetes Fundamentals</span>
-                            <span class="skill-badge">Linux</span>
-                            <span class="skill-badge">Git & GitHub</span>
-                            <span class="skill-badge">CI/CD & GitHub Actions</span>
-                            <span class="skill-badge">Render Deployment</span>
+                            <span class="skill-badge">Scikit-learn</span>
+                            <span class="skill-badge">Supervised & Unsupervised Learning</span>
+                            <span class="skill-badge">Feature Engineering</span>
+                            <span class="skill-badge">Model Evaluation</span>
+                            <span class="skill-badge">Cross Validation</span>
                         </div>
                     </div>
 
-                    <!-- Databases Card -->
+                    <!-- Data Analysis -->
+                    <div class="skill-card glass">
+                        <div class="skill-card-header">
+                            <i class="fas fa-chart-pie icon-tools"></i>
+                            <h3>Data Analysis</h3>
+                        </div>
+                        <div class="skill-list">
+                            <span class="skill-badge">Pandas</span>
+                            <span class="skill-badge">NumPy</span>
+                            <span class="skill-badge">Exploratory Data Analysis (EDA)</span>
+                            <span class="skill-badge">Data Cleaning</span>
+                            <span class="skill-badge">Data Visualization</span>
+                        </div>
+                    </div>
+
+                    <!-- Databases -->
                     <div class="skill-card glass">
                         <div class="skill-card-header">
                             <i class="fas fa-database icon-db"></i>
                             <h3>Databases</h3>
                         </div>
                         <div class="skill-list">
-                            <span class="skill-badge">MongoDB</span>
                             <span class="skill-badge">MySQL</span>
                         </div>
                     </div>
 
-                    <!-- Libraries & Tools Card -->
+                    <!-- Tools -->
                     <div class="skill-card glass">
                         <div class="skill-card-header">
-                            <i class="fas fa-chart-line icon-tools"></i>
-                            <h3>Libraries & Tools</h3>
+                            <i class="fas fa-tools icon-networking"></i>
+                            <h3>Tools</h3>
                         </div>
                         <div class="skill-list">
-                            <span class="skill-badge">NumPy</span>
-                            <span class="skill-badge">Pandas</span>
-                            <span class="skill-badge">Scikit-learn</span>
-                            <span class="skill-badge">Matplotlib</span>
-                            <span class="skill-badge">Postman</span>
+                            <span class="skill-badge">Git</span>
+                            <span class="skill-badge">GitHub</span>
+                            <span class="skill-badge">Jupyter</span>
+                            <span class="skill-badge">Antigravity</span>
                             <span class="skill-badge">VS Code</span>
-                        </div>
-                    </div>
-
-                    <!-- Networking Card -->
-                    <div class="skill-card glass">
-                        <div class="skill-card-header">
-                            <i class="fas fa-network-wired icon-networking"></i>
-                            <h3>Networking</h3>
-                        </div>
-                        <div class="skill-list">
-                            <span class="skill-badge">DNS</span>
-                            <span class="skill-badge">HTTP / HTTPS</span>
-                            <span class="skill-badge">Load Balancing</span>
-                            <span class="skill-badge">Client-Server Arch</span>
-                            <span class="skill-badge">TCP/IP Fundamentals</span>
                         </div>
                     </div>
                 </div>
@@ -274,10 +290,7 @@
                                 Celebal Technologies
                             </button>
                             <button class="tab-btn" role="tab" aria-selected="false" data-tab="exp-svaarogym">
-                                Svaarogym Medical
-                            </button>
-                            <button class="tab-btn" role="tab" aria-selected="false" data-tab="exp-kistechno">
-                                Kistechno Software
+                                Svaarogym Medical Devices
                             </button>
                         </div>
                     </div>
@@ -286,18 +299,18 @@
                         <!-- Celebal Technologies Tab -->
                         <div class="tab-pane active glass" id="exp-celebal" role="tabpanel">
                             <div class="pane-header">
-                                <h3>Celebal Excellence Intern (CEI)</h3>
+                                <h3>Data Science Intern</h3>
                                 <span class="pane-company">Celebal Technologies</span>
                                 <div class="pane-meta">
-                                    <span><i class="fas fa-calendar-alt"></i> May 2026 -- Present</span>
-                                    <span><i class="fas fa-map-marker-alt"></i> Jaipur, India (Hybrid)</span>
+                                    <span><i class="fas fa-calendar-alt"></i> May 2026 – July 2026</span>
+                                    <span><i class="fas fa-map-marker-alt"></i> Jaipur</span>
                                 </div>
                             </div>
                             <ul class="pane-details">
-                                <li>Selected for the highly competitive Celebal Excellence Internship (CEI) 2026, an industry-focused program targeting emerging talents.</li>
-                                <li>Participating in intensive structured training and mentorship sessions under seasoned enterprise architects.</li>
-                                <li>Collaborating on hands-on practical projects across cloud platforms, database optimization, and high-performance technologies.</li>
-                                <li>Engaging in real-world engineering problem solving, software deployment best practices, and enterprise standards.</li>
+                                <li>Developed Python-based data processing workflows for cleaning, validation, and preprocessing real-world datasets.</li>
+                                <li>Built reusable machine learning preprocessing pipelines to improve code modularity and maintainability.</li>
+                                <li>Performed exploratory data analysis, feature engineering, and model evaluation using Scikit-learn.</li>
+                                <li>Collaborated using Git and GitHub for version control, debugging, and project development.</li>
                             </ul>
                         </div>
 
@@ -307,32 +320,15 @@
                                 <h3>Machine Learning Intern</h3>
                                 <span class="pane-company">Svaarogym Medical Devices Pvt. Ltd. (MNIT)</span>
                                 <div class="pane-meta">
-                                    <span><i class="fas fa-calendar-alt"></i> Jun 2025 -- Jul 2025</span>
-                                    <span><i class="fas fa-map-marker-alt"></i> Jaipur, India (In-Office)</span>
+                                    <span><i class="fas fa-calendar-alt"></i> June 2025 – July 2025</span>
+                                    <span><i class="fas fa-map-marker-alt"></i> Jaipur</span>
                                 </div>
                             </div>
                             <ul class="pane-details">
-                                <li>Analyzed and preprocessed physiological signals (ECG, EMG, GSR) for bio-medical machine learning model research.</li>
-                                <li>Implemented core ML algorithms including Support Vector Machines (SVM), Principal Component Analysis (PCA), and clustering techniques using Python and Scikit-learn.</li>
-                                <li>Executed robust feature engineering pipelines, exploratory data analyses (EDA), and graphical signal visualizations with Pandas and Matplotlib.</li>
-                                <li>Optimized model performance parameters, resulting in accurate predictive indicators for biomedical evaluation modules.</li>
-                            </ul>
-                        </div>
-
-                        <!-- Kistechno Software Tab -->
-                        <div class="tab-pane glass" id="exp-kistechno" role="tabpanel">
-                            <div class="pane-header">
-                                <h3>Web Development Intern</h3>
-                                <span class="pane-company">Kistechno Software</span>
-                                <div class="pane-meta">
-                                    <span><i class="fas fa-calendar-alt"></i> Jul 2024 -- Aug 2024</span>
-                                    <span><i class="fas fa-map-marker-alt"></i> Jaipur, India</span>
-                                </div>
-                            </div>
-                            <ul class="pane-details">
-                                <li>Developed clean, modular, and fully responsive client landing pages using HTML5, CSS3, and modern JavaScript.</li>
-                                <li>Collaborated closely with designers to improve core UX interactions and front-end interface layouts.</li>
-                                <li>Optimized resource loading, script efficiency, and cross-browser stylesheet compatibility to increase rendering performance.</li>
+                                <li>Analyzed physiological signal datasets using Python for predictive healthcare applications.</li>
+                                <li>Applied preprocessing, feature extraction, and dimensionality reduction techniques for improved data representation.</li>
+                                <li>Trained and evaluated machine learning classification models using Scikit-Learn.</li>
+                                <li>Performed exploratory data analysis and model validation to improve prediction reliability.</li>
                             </ul>
                         </div>
                     </div>
@@ -344,72 +340,44 @@
         <section id="projects" class="section projects-section">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-subtitle">My Creations</span>
+                    <span class="section-subtitle">My Portfolio</span>
                     <h2 class="section-title">Featured Projects</h2>
                     <div class="section-underline"></div>
                 </div>
                 <div class="project-filters">
                     <button class="filter-btn active" data-filter="all">All Projects</button>
-                    <button class="filter-btn" data-filter="fullstack">Full-Stack Dev</button>
+                    <button class="filter-btn" data-filter="forecasting">Time-Series & Forecasting</button>
                     <button class="filter-btn" data-filter="ml">Machine Learning</button>
                 </div>
                 
                 <div class="projects-grid">
-                    <!-- Fork & Flames -->
-                    <div class="project-card glass" data-category="fullstack">
+                    <!-- Multi-Series Retail Demand Forecasting -->
+                    <div class="project-card glass" data-category="forecasting">
                         <div class="project-visual-placeholder">
                             <div class="project-card-icon">
-                                <i class="fas fa-utensils"></i>
+                                <i class="fas fa-chart-line"></i>
                             </div>
                             <div class="project-glow"></div>
                         </div>
                         <div class="project-info">
                             <div class="project-meta-row">
-                                <span class="project-label">Full-Stack / DevOps</span>
+                                <span class="project-label">Time-Series / ML</span>
+                                <span class="project-date">June 2026 – July 2026</span>
                             </div>
-                            <h3>Fork & Flames -- Restaurant Management</h3>
+                            <h3>Multi-Series Retail Demand Forecasting</h3>
                             <p>
-                                A comprehensive, containerized restaurant management system. Features secure user/staff/admin authentication workflows, dynamic menu catalogs, role-based controls, and dashboard tracking.
-                            </p>
-                            <div class="project-tech">
-                                <span>Node.js</span>
-                                <span>Express.js</span>
-                                <span>MongoDB</span>
-                                <span>Docker</span>
-                                <span>Render</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://github.com/RaghavGoyal6046" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="GitHub Source"><i class="fab fa-github"></i> Source</a>
-                                <a href="https://fork-flames.onrender.com" target="_blank" rel="noopener noreferrer" class="project-link live" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- PainMeter -->
-                    <div class="project-card glass" data-category="ml">
-                        <div class="project-visual-placeholder">
-                            <div class="project-card-icon">
-                                <i class="fas fa-heartbeat"></i>
-                            </div>
-                            <div class="project-glow"></div>
-                        </div>
-                        <div class="project-info">
-                            <div class="project-meta-row">
-                                <span class="project-label">Machine Learning</span>
-                            </div>
-                            <h3>PainMeter -- Pain Assessment</h3>
-                            <p>
-                                An automatic classification model that estimates physiological pain levels based on ECG, EMG, and GSR signal biosensors. Implements advanced feature engineering and PCA.
+                                Built a multi-series retail demand forecasting pipeline for <strong>500 store-item combinations</strong> using advanced time-series feature engineering (calendar, lag, and rolling-window features). Benchmarked Linear Regression, Random Forest, XGBoost, and LightGBM, achieving <strong>93.72% R²</strong>, MAE of <strong>6.08</strong>, and RMSE of <strong>7.91</strong>. Implemented chronological validation and recursive multi-step prediction.
                             </p>
                             <div class="project-tech">
                                 <span>Python</span>
                                 <span>Scikit-learn</span>
-                                <span>SVM</span>
-                                <span>PCA</span>
-                                <span>NumPy</span>
+                                <span>XGBoost</span>
+                                <span>LightGBM</span>
+                                <span>Pandas</span>
+                                <span>Time-Series</span>
                             </div>
                             <div class="project-links">
-                                <a href="https://github.com/RaghavGoyal6046" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="GitHub Source"><i class="fab fa-github"></i> Source</a>
+                                <a href="https://github.com/RaghavGoyal6046" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="GitHub Source"><i class="fab fa-github"></i> GitHub</a>
                             </div>
                         </div>
                     </div>
@@ -425,19 +393,51 @@
                         <div class="project-info">
                             <div class="project-meta-row">
                                 <span class="project-label">Machine Learning</span>
+                                <span class="project-date">Jan 2026 – Feb 2026</span>
                             </div>
                             <h3>Customer Churn Prediction</h3>
                             <p>
-                                Built predictive classification algorithms to detect subscription churn rates. Includes deep exploratory data analysis (EDA), data cleaning, feature correlation, and business retention optimization dashboards.
+                                Developed a customer churn prediction pipeline using Python and Scikit-learn, covering data preprocessing, feature engineering, model training, and evaluation. Implemented ColumnTransformer-based preprocessing and cross-validation to ensure consistent data transformation. Optimized classification threshold using Precision-Recall analysis, increasing recall from <strong>70.0% to 87.5%</strong>.
                             </p>
                             <div class="project-tech">
                                 <span>Python</span>
-                                <span>Pandas</span>
                                 <span>Scikit-learn</span>
-                                <span>Matplotlib</span>
+                                <span>ColumnTransformer</span>
+                                <span>Precision-Recall</span>
+                                <span>Pandas</span>
                             </div>
                             <div class="project-links">
-                                <a href="https://github.com/RaghavGoyal6046" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="GitHub Source"><i class="fab fa-github"></i> Source</a>
+                                <a href="https://github.com/RaghavGoyal6046" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="GitHub Source"><i class="fab fa-github"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PainMeter – Automatic Pain Level Assessment -->
+                    <div class="project-card glass" data-category="ml">
+                        <div class="project-visual-placeholder">
+                            <div class="project-card-icon">
+                                <i class="fas fa-heartbeat"></i>
+                            </div>
+                            <div class="project-glow"></div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-meta-row">
+                                <span class="project-label">Machine Learning / Bio</span>
+                                <span class="project-date">June 2025 – July 2025</span>
+                            </div>
+                            <h3>PainMeter – Automatic Pain Level Assessment</h3>
+                            <p>
+                                Developed a machine learning pipeline for automatic pain-level classification from physiological signals. Applied preprocessing, feature extraction, and dimensionality reduction to improve feature quality and model performance across Scikit-learn, NumPy, and Pandas.
+                            </p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>Scikit-learn</span>
+                                <span>NumPy</span>
+                                <span>Pandas</span>
+                                <span>Signal Processing</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/RaghavGoyal6046" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="GitHub Source"><i class="fab fa-github"></i> GitHub</a>
                             </div>
                         </div>
                     </div>
@@ -445,67 +445,92 @@
             </div>
         </section>
 
-        <!-- Certifications & Achievements Section -->
-        <section id="certifications" class="section certifications-section">
+        <!-- Achievements Section -->
+        <section id="achievements" class="section achievements-section">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-subtitle">Credentials</span>
-                    <h2 class="section-title">Certifications & Achievements</h2>
+                    <span class="section-subtitle">Recognition</span>
+                    <h2 class="section-title">Achievements & Credentials</h2>
                     <div class="section-underline"></div>
                 </div>
                 <div class="certifications-grid">
-                    <!-- Cert 1 -->
+                    <!-- Algorithmic Proficiency -->
                     <div class="cert-card glass">
                         <div class="cert-icon">
                             <i class="fas fa-trophy text-purple"></i>
                         </div>
                         <div class="cert-info">
-                            <h3>Celebal Excellence Internship 2026</h3>
-                            <p>Selected among highly competitive applicants for Celebal Excellence Internship.</p>
+                            <h3>Algorithmic Proficiency</h3>
+                            <p>Solved 500+ Data Structures and Algorithms problems across LeetCode and GeeksforGeeks.</p>
                         </div>
                     </div>
 
-                    <!-- Cert 2 -->
+                    <!-- Professional Credential -->
                     <div class="cert-card glass">
                         <div class="cert-icon">
-                            <i class="fas fa-laptop-code text-cyan"></i>
+                            <i class="fas fa-certificate text-cyan"></i>
                         </div>
                         <div class="cert-info">
-                            <h3>Microsoft AI Bootcamp</h3>
-                            <p>Selected in AI Bootcamp for Freshers by RCAT, covering Azure Cloud and AI Fundamentals.</p>
+                            <h3>Professional Credential</h3>
+                            <p>Earned the HackerRank SQL certification.</p>
                         </div>
                     </div>
 
-                    <!-- Cert 3 -->
+                    <!-- Leadership & Teamwork -->
                     <div class="cert-card glass">
                         <div class="cert-icon">
-                            <i class="fas fa-award text-purple"></i>
+                            <i class="fas fa-users text-purple"></i>
                         </div>
                         <div class="cert-info">
-                            <h3>400+ DSA Problems Solved</h3>
-                            <p>Demonstrated strong analytical and problem-solving skills across various competitive coding profiles.</p>
+                            <h3>Leadership & Teamwork</h3>
+                            <p>Coordinated the college annual fest by collaborating with cross-functional teams to plan logistics, manage operations, and ensure successful event execution.</p>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
 
-                    <!-- Cert 4 -->
-                    <div class="cert-card glass">
-                        <div class="cert-icon">
-                            <i class="fas fa-chart-bar text-cyan"></i>
+        <!-- Coding Profile Section -->
+        <section id="coding-profile" class="section coding-profile-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Coding Analytics</span>
+                    <h2 class="section-title">Live Codolio Profile</h2>
+                    <div class="section-underline"></div>
+                </div>
+                <div class="coding-profile-content">
+                    <div class="codolio-card-container glass">
+                        <div class="codolio-card-header">
+                            <div class="dot-group">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <span class="codolio-card-title">codolio.com/profile/RaghavGoyal5105</span>
                         </div>
-                        <div class="cert-info">
-                            <h3>Power BI Analytics Solutions</h3>
-                            <p>Microsoft Learn credentials for data visualization, dashboard building, and analytics.</p>
+                        <div class="codolio-card-body">
+                            <div class="codolio-img-wrapper">
+                                <a href="https://codolio.com/profile/RaghavGoyal5105/card" target="_blank" rel="noopener noreferrer">
+                                    <img src="https://codolio.com/api/og/RaghavGoyal5105" alt="Raghav Goyal Codolio Profile Card" class="codolio-img" loading="lazy">
+                                </a>
+                            </div>
                         </div>
                     </div>
-
-                    <!-- Cert 5 -->
-                    <div class="cert-card glass">
-                        <div class="cert-icon">
-                            <i class="fas fa-lightbulb text-purple"></i>
-                        </div>
-                        <div class="cert-info">
-                            <h3>Smart India Hackathon 2024</h3>
-                            <p>Selected and qualified in the College-Level PPT presentation round of SIH 2024.</p>
+                    <div class="coding-profile-info glass">
+                        <h3>Interactive Coding Portfolio</h3>
+                        <p>
+                            My coding journey, contest ratings, and problem-solving metrics are tracked in real-time on Codolio. It aggregates my coding history, language proficiencies, and platform achievements from across various competitive programming environments.
+                        </p>
+                        <ul class="coding-features">
+                            <li><i class="fas fa-check-circle text-cyan"></i> Real-time contest tracking & analytics</li>
+                            <li><i class="fas fa-check-circle text-cyan"></i> 400+ coding challenges compiled</li>
+                            <li><i class="fas fa-check-circle text-cyan"></i> Aggregates LeetCode, GitHub, and Codeforces profiles</li>
+                        </ul>
+                        <div class="coding-cta">
+                            <a href="https://codolio.com/profile/RaghavGoyal5105/card" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                                <span>View Live Profile</span>
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -631,6 +656,7 @@
                         <li><a href="#skills">Skills</a></li>
                         <li><a href="#experience">Experience</a></li>
                         <li><a href="#projects">Projects</a></li>
+                        <li><a href="#coding-profile">Codolio</a></li>
                         <li><a href="#terminal">Terminal</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
