@@ -85,10 +85,11 @@ document.addEventListener('DOMContentLoaded', () => {
        ========================================================================== */
     const typingSpan = document.getElementById('typing-text');
     const phrases = [
+        "Full-Stack Web & REST APIs",
         "Time-Series Forecasting Pipelines",
         "Machine Learning Classification Models",
-        "Data Preprocessing & EDA Workflows",
-        "Data-Driven Solutions"
+        "Azure AI & Cloud Solutions",
+        "Data Preprocessing & EDA Pipelines"
     ];
     let phraseIndex = 0;
     let charIndex = 0;
@@ -213,34 +214,38 @@ document.addEventListener('DOMContentLoaded', () => {
         `,
         about: `
             <span class="text-green">Bio:</span> Raghav Goyal is a B.Tech student in Computer Science & Engineering 
-            (Data Science) at SKIT Jaipur (CGPA: 8.8). He specializes in building Python data processing workflows, 
-            time-series demand forecasting pipelines (93.72% R²), and machine learning signal classification models.
+            (Data Science) at SKIT Jaipur (CGPA: 8.8) and Microsoft Certified: Azure AI Engineer Associate (2026). 
+            He specializes in building full-stack applications (Node.js, Express, MongoDB, Docker), REST APIs (FastAPI), 
+            time-series demand forecasting pipelines (93.72% R²), and machine learning classification models.
         `,
         skills: `
-            <span class="text-green">Languages:</span> C++, Python, SQL<br>
-            <span class="text-green">CS Fundamentals:</span> Data Structures & Algorithms, OOP, DBMS<br>
-            <span class="text-green">Machine Learning:</span> Scikit-learn, Supervised & Unsupervised Learning, Feature Engineering, Model Evaluation, Cross Validation<br>
+            <span class="text-green">Programming Languages:</span> C++, Python, SQL, JavaScript<br>
+            <span class="text-green">CS Fundamentals:</span> Data Structures & Algorithms, Object-Oriented Programming (OOP), Operating Systems, DBMS, Computer Networks, Complexity Analysis<br>
+            <span class="text-green">Software Development:</span> REST APIs, FastAPI, Node.js, Express.js, Docker<br>
+            <span class="text-green">Databases:</span> MySQL, MongoDB<br>
+            <span class="text-green">Machine Learning:</span> Scikit-learn, Feature Engineering, Model Evaluation, Cross Validation, Supervised & Unsupervised Learning<br>
             <span class="text-green">Data Analysis:</span> Pandas, NumPy, EDA, Data Cleaning, Data Visualization<br>
-            <span class="text-green">Databases:</span> MySQL<br>
-            <span class="text-green">Tools:</span> Git, GitHub, Jupyter, Antigravity, VS Code
+            <span class="text-green">Tools:</span> Git, GitHub, Jupyter, VS Code, Postman, Antigravity
         `,
         experience: `
             1. <span class="text-white">Celebal Technologies</span> (May 2026 – July 2026, Jaipur)<br>
                Role: Data Science Intern<br>
-               Focus: Python data processing workflows, modular ML preprocessing pipelines, EDA.<br><br>
+               Focus: Python data processing workflows, reusable preprocessing pipelines with modular components, EDA, Scikit-learn.<br><br>
             2. <span class="text-white">Svaarogym Medical Devices Pvt. Ltd. (MNIT)</span> (June 2025 – July 2025, Jaipur)<br>
                Role: Machine Learning Intern<br>
-               Focus: Physiological signal analysis, feature extraction, classification model evaluation.
+               Focus: Physiological signal analysis, feature extraction & dimensionality reduction, classification model evaluation.
         `,
         projects: `
-            1. <span class="text-cyan">Multi-Series Retail Demand Forecasting</span>: Forecasted 500 store-item combinations using XGBoost/LightGBM (93.72% R²).<br>
-            2. <span class="text-cyan">Customer Churn Prediction</span>: ColumnTransformer pipeline & Precision-Recall optimization (Recall: 70.0% -> 87.5%).<br>
-            3. <span class="text-cyan">PainMeter – Pain Assessment</span>: Machine learning pipeline for physiological signal classification.
+            1. <span class="text-cyan">Fork & Flames – Restaurant Management System</span>: Full-stack system with Node.js, Express.js, MongoDB, REST APIs, JWT & RBAC security, containerized via Docker and tested with Postman.<br>
+            2. <span class="text-cyan">Multi-Series Retail Demand Forecasting</span>: Forecasted 500 store-item combinations using XGBoost/LightGBM (93.72% R², MAE 6.08, RMSE 7.91).<br>
+            3. <span class="text-cyan">Customer Churn Prediction</span>: ColumnTransformer ML pipeline deployed as a FastAPI REST API with Precision-Recall optimization (87.5% Recall).<br>
+            4. <span class="text-cyan">PainMeter – Pain Assessment</span>: Machine learning pipeline for physiological signal classification.
         `,
         achievements: `
-            1. <span class="text-white">Algorithmic Proficiency:</span> Solved 500+ DSA problems across LeetCode & GeeksforGeeks.<br>
-            2. <span class="text-white">Professional Credential:</span> Earned HackerRank SQL Certification.<br>
-            3. <span class="text-white">Leadership & Teamwork:</span> Coordinated college annual fest operations & logistics.
+            1. <span class="text-white">Professional Credential:</span> Microsoft Certified: Azure AI Engineer Associate (2026).<br>
+            2. <span class="text-white">Algorithmic Proficiency:</span> Solved 500+ DSA problems across LeetCode & GeeksforGeeks.<br>
+            3. <span class="text-white">Leadership & Teamwork:</span> Coordinated college annual fest operations, logistics & cross-functional planning.<br>
+            4. <span class="text-white">Database Credential:</span> HackerRank SQL Certified.
         `,
         contact: `
             <span class="text-cyan">Direct Channels:</span><br>
