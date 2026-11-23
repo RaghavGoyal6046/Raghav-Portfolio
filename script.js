@@ -85,11 +85,11 @@ document.addEventListener('DOMContentLoaded', () => {
        ========================================================================== */
     const typingSpan = document.getElementById('typing-text');
     const phrases = [
+        "Generative AI & RAG Applications",
         "Full-Stack Web & REST APIs",
-        "Time-Series Forecasting Pipelines",
+        "Time-Series Demand Forecasting",
         "Machine Learning Classification Models",
-        "Azure AI & Cloud Solutions",
-        "Data Preprocessing & EDA Pipelines"
+        "Azure AI & Cloud Solutions"
     ];
     let phraseIndex = 0;
     let charIndex = 0;
@@ -174,8 +174,9 @@ document.addEventListener('DOMContentLoaded', () => {
             // Filter project cards
             projectCards.forEach(card => {
                 const cardCategory = card.getAttribute('data-category');
+                const categories = cardCategory ? cardCategory.split(' ') : [];
                 
-                if (filterValue === 'all' || cardCategory === filterValue) {
+                if (filterValue === 'all' || categories.includes(filterValue)) {
                     card.classList.remove('hide');
                     // Add subtle fade-in animation
                     card.style.opacity = '0';
@@ -205,7 +206,7 @@ document.addEventListener('DOMContentLoaded', () => {
             - <span class="text-white">about</span>        : Brief introduction of my background<br>
             - <span class="text-white">skills</span>       : Technical skills overview<br>
             - <span class="text-white">experience</span>   : Corporate & research internships list<br>
-            - <span class="text-white">projects</span>     : Details on Machine Learning systems<br>
+            - <span class="text-white">projects</span>     : Details on deployed systems & ML pipelines<br>
             - <span class="text-white">achievements</span> : Algorithmic metrics & credentials<br>
             - <span class="text-white">messages</span>     : View messages submitted via contact form<br>
             - <span class="text-white">codolio</span>      : View Codolio coding profile and metrics<br>
@@ -215,17 +216,18 @@ document.addEventListener('DOMContentLoaded', () => {
         about: `
             <span class="text-green">Bio:</span> Raghav Goyal is a B.Tech student in Computer Science & Engineering 
             (Data Science) at SKIT Jaipur (CGPA: 8.8) and Microsoft Certified: Azure AI Engineer Associate (2026). 
-            He specializes in building full-stack applications (Node.js, Express, MongoDB, Docker), REST APIs (FastAPI), 
-            time-series demand forecasting pipelines (93.72% R²), and machine learning classification models.
+            He specializes in building scalable full-stack applications (Node.js, Express, MongoDB Atlas, MySQL), 
+            Generative AI & RAG pipelines (FastAPI, LangChain, Google Gemini API), time-series demand forecasting (93.72% R²), 
+            and machine learning classification models.
         `,
         skills: `
-            <span class="text-green">Programming Languages:</span> C++, Python, SQL, JavaScript<br>
-            <span class="text-green">CS Fundamentals:</span> Data Structures & Algorithms, Object-Oriented Programming (OOP), Operating Systems, DBMS, Computer Networks, Complexity Analysis<br>
-            <span class="text-green">Software Development:</span> REST APIs, FastAPI, Node.js, Express.js, Docker<br>
-            <span class="text-green">Databases:</span> MySQL, MongoDB<br>
-            <span class="text-green">Machine Learning:</span> Scikit-learn, Feature Engineering, Model Evaluation, Cross Validation, Supervised & Unsupervised Learning<br>
+            <span class="text-green">Programming Languages:</span> Python, JavaScript, C++, SQL<br>
+            <span class="text-green">Generative AI:</span> LLMs, RAG, LangChain, Google Gemini API, Prompt Engineering, Embeddings, Vector Search<br>
+            <span class="text-green">Machine Learning:</span> Scikit-learn, XGBoost, LightGBM, Feature Engineering, Model Evaluation, Cross-Validation<br>
+            <span class="text-green">Full-Stack & Backend:</span> Node.js, Express.js, FastAPI, REST APIs, JWT, RBAC, Cloudinary, Docker<br>
+            <span class="text-green">Databases:</span> MongoDB Atlas, MySQL<br>
             <span class="text-green">Data Analysis:</span> Pandas, NumPy, EDA, Data Cleaning, Data Visualization<br>
-            <span class="text-green">Tools:</span> Git, GitHub, Jupyter, VS Code, Postman, Antigravity
+            <span class="text-green">Tools & Cloud:</span> Git, GitHub, Render, Streamlit, Postman, Jupyter, VS Code
         `,
         experience: `
             1. <span class="text-white">Celebal Technologies</span> (May 2026 – July 2026, Jaipur)<br>
@@ -236,16 +238,35 @@ document.addEventListener('DOMContentLoaded', () => {
                Focus: Physiological signal analysis, feature extraction & dimensionality reduction, classification model evaluation.
         `,
         projects: `
-            1. <span class="text-cyan">Fork & Flames – Restaurant Management System</span>: Full-stack system with Node.js, Express.js, MongoDB, REST APIs, JWT & RBAC security, containerized via Docker and tested with Postman.<br>
-            2. <span class="text-cyan">Multi-Series Retail Demand Forecasting</span>: Forecasted 500 store-item combinations using XGBoost/LightGBM (93.72% R², MAE 6.08, RMSE 7.91).<br>
-            3. <span class="text-cyan">Customer Churn Prediction</span>: ColumnTransformer ML pipeline deployed as a FastAPI REST API with Precision-Recall optimization (87.5% Recall).<br>
-            4. <span class="text-cyan">PainMeter – Pain Assessment</span>: Machine learning pipeline for physiological signal classification.
+            1. <span class="text-cyan">Fork & Flames – Full Stack Restaurant Platform with AI Concierge</span><br>
+               - Tech: Node.js, Express.js, MongoDB Atlas, Google Gemini API, JWT, RBAC, Render<br>
+               - Live Demo: <a href="https://fork-flames.onrender.com" target="_blank" class="text-green">fork-flames.onrender.com</a><br>
+               - GitHub: <a href="https://github.com/RaghavGoyal6046/fork-flames" target="_blank" class="text-cyan">github.com/RaghavGoyal6046/fork-flames</a><br><br>
+            2. <span class="text-cyan">PharmaTrace – FEFO Pharmacy POS & Inventory System</span><br>
+               - Tech: Node.js, Express.js, MySQL, JavaScript, FEFO Allocation Engine, Render<br>
+               - Live Demo: <a href="https://auriga-sde1-builder.onrender.com" target="_blank" class="text-green">auriga-sde1-builder.onrender.com</a><br>
+               - GitHub: <a href="https://github.com/RaghavGoyal6046/Auriga-SDE1-Builder" target="_blank" class="text-cyan">github.com/RaghavGoyal6046/Auriga-SDE1-Builder</a><br><br>
+            3. <span class="text-cyan">RAG-Based Document Q&A System</span><br>
+               - Tech: Python, FastAPI, LangChain, LLMs, Embeddings, Vector Search, Render<br>
+               - Live Demo: <a href="https://rag-based-document-qa-system.onrender.com/" target="_blank" class="text-green">rag-based-document-qa-system.onrender.com</a><br>
+               - GitHub: <a href="https://github.com/RaghavGoyal6046/RAG-_BASED_DOCUMENT_QA_SYSTEM" target="_blank" class="text-cyan">github.com/RaghavGoyal6046/RAG-_BASED_DOCUMENT_QA_SYSTEM</a><br><br>
+            4. <span class="text-cyan">Multi-Series Retail Demand Forecasting</span><br>
+               - Tech: Python, Scikit-learn, XGBoost, LightGBM, Pandas, Streamlit<br>
+               - Live Demo: <a href="https://multi-series-forecasting-for-retail-demand.streamlit.app/" target="_blank" class="text-green">multi-series-forecasting-for-retail-demand.streamlit.app</a><br>
+               - GitHub: <a href="https://github.com/RaghavGoyal6046/Multi-Series-Forecasting-for-Retail-Demand-Optimiz-Celebal" target="_blank" class="text-cyan">github.com/.../Multi-Series-Forecasting</a><br><br>
+            5. <span class="text-cyan">Customer Churn Prediction</span><br>
+               - Tech: Python, Scikit-learn, FastAPI, ColumnTransformer (87.5% Recall)<br>
+               - GitHub: <a href="https://github.com/RaghavGoyal6046" target="_blank" class="text-cyan">github.com/RaghavGoyal6046</a><br><br>
+            6. <span class="text-cyan">PainMeter – Automatic Pain Level Assessment</span><br>
+               - Tech: Python, Scikit-learn, NumPy, Pandas, Physiological Signal Processing<br>
+               - GitHub: <a href="https://github.com/RaghavGoyal6046/PainMeter-ML-Project" target="_blank" class="text-cyan">github.com/RaghavGoyal6046/PainMeter-ML-Project</a>
         `,
         achievements: `
             1. <span class="text-white">Professional Credential:</span> Microsoft Certified: Azure AI Engineer Associate (2026).<br>
-            2. <span class="text-white">Algorithmic Proficiency:</span> Solved 500+ DSA problems across LeetCode & GeeksforGeeks.<br>
-            3. <span class="text-white">Leadership & Teamwork:</span> Coordinated college annual fest operations, logistics & cross-functional planning.<br>
-            4. <span class="text-white">Database Credential:</span> HackerRank SQL Certified.
+            2. <span class="text-white">Algorithmic Proficiency:</span> Solved 550+ DSA problems across LeetCode & GeeksforGeeks.<br>
+            3. <span class="text-white">Hackathon:</span> Selected at college level for Smart India Hackathon (SIH) 2024.<br>
+            4. <span class="text-white">Leadership:</span> Coordinated college annual fest with a 10-member team.<br>
+            5. <span class="text-white">Database Credential:</span> HackerRank SQL Certified.
         `,
         contact: `
             <span class="text-cyan">Direct Channels:</span><br>
@@ -257,7 +278,7 @@ document.addEventListener('DOMContentLoaded', () => {
         codolio: `
             <span class="text-green">Codolio Profile:</span> Aggregates competitive programming data & metrics.<br>
             - <span class="text-white">Profile URL:</span> <a href="https://codolio.com/profile/RaghavGoyal5105/card" target="_blank" class="text-cyan">codolio.com/profile/RaghavGoyal5105</a><br>
-            - <span class="text-white">Total Solved:</span> 500+ Problems (across platforms)<br>
+            - <span class="text-white">Total Solved:</span> 550+ Problems (across platforms)<br>
             - <span class="text-white">Skills:</span> Data Structures & Algorithms, Problem Solving, SQL
         `,
         messages: () => {

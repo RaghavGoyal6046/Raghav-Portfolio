@@ -94,7 +94,7 @@
                             <p class="indent-3">self.name = <span class="string">"Raghav Goyal"</span></p>
                             <p class="indent-3">self.role = <span class="string">"Data Science & Full-Stack"</span></p>
                             <p class="indent-3">self.cgpa = <span class="number">8.8</span></p>
-                            <p class="indent-3">self.dsa_solved = <span class="number">500</span></p>
+                            <p class="indent-3">self.dsa_solved = <span class="number">550</span></p>
                             <p class="indent-3">self.cert = <span class="string">"Azure AI Engineer"</span></p>
                             <br>
                             <p class="indent-2">def <span class="func-name">build_and_deploy</span>(self):</p>
@@ -122,13 +122,13 @@
                     <div class="about-bio glass">
                         <h3>Data Science, ML & Full-Stack Engineer</h3>
                         <p>
-                            Currently pursuing B.Tech in Computer Science and Engineering with a specialization in Data Science at SKIT Jaipur (CGPA: 8.8), I focus on building scalable software applications, robust REST APIs, modular machine learning pipelines, and performing deep statistical analyses.
+                            Currently pursuing B.Tech in Computer Science and Engineering with a specialization in Data Science at SKIT Jaipur (CGPA: 8.8), I focus on building scalable full-stack applications, Retrieval-Augmented Generation (RAG) pipelines, robust REST APIs, modular machine learning systems, and time-series demand forecasting models.
                         </p>
                         <p>
                             My professional journey includes Data Science and Machine Learning internships at Celebal Technologies and Svaarogym Medical Devices (MNIT), where I engineered reusable preprocessing pipelines, multi-series demand forecasting models, biomedical signal processing workflows, and predictive classification models.
                         </p>
                         <p>
-                            I hold the <strong>Microsoft Certified: Azure AI Engineer Associate (2026)</strong> credential, have engineered containerized full-stack systems like Fork & Flames (Node.js, Express, MongoDB, Docker), and am an active competitive programmer with over <strong>500+ Data Structures & Algorithms</strong> problems solved across LeetCode and GeeksforGeeks.
+                            I hold the <strong>Microsoft Certified: Azure AI Engineer Associate (2026)</strong> credential, have engineered deployed systems like Fork & Flames (Node.js, Express, MongoDB, Gemini AI), PharmaTrace (FEFO pharmacy inventory engine), and RAG Document Q&A, and am an active competitive programmer with over <strong>550+ Data Structures & Algorithms</strong> problems solved across LeetCode and GeeksforGeeks.
                         </p>
                     </div>
                     <div class="about-education glass">
@@ -236,6 +236,23 @@
                         </div>
                     </div>
 
+                    <!-- Generative AI & LLMs -->
+                    <div class="skill-card glass">
+                        <div class="skill-card-header">
+                            <i class="fas fa-brain icon-web"></i>
+                            <h3>Generative AI & LLMs</h3>
+                        </div>
+                        <div class="skill-list">
+                            <span class="skill-badge">LLMs</span>
+                            <span class="skill-badge">RAG</span>
+                            <span class="skill-badge">LangChain</span>
+                            <span class="skill-badge">Google Gemini API</span>
+                            <span class="skill-badge">Prompt Engineering</span>
+                            <span class="skill-badge">Vector Search</span>
+                            <span class="skill-badge">Embeddings</span>
+                        </div>
+                    </div>
+
                     <!-- Machine Learning -->
                     <div class="skill-card glass">
                         <div class="skill-card-header">
@@ -244,10 +261,11 @@
                         </div>
                         <div class="skill-list">
                             <span class="skill-badge">Scikit-learn</span>
+                            <span class="skill-badge">XGBoost & LightGBM</span>
                             <span class="skill-badge">Feature Engineering</span>
                             <span class="skill-badge">Model Evaluation</span>
                             <span class="skill-badge">Cross Validation</span>
-                            <span class="skill-badge">Supervised & Unsupervised Learning</span>
+                            <span class="skill-badge">Supervised & Unsupervised</span>
                         </div>
                     </div>
 
@@ -368,14 +386,15 @@
                 </div>
                 <div class="project-filters">
                     <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="ai">Generative AI & LLMs</button>
                     <button class="filter-btn" data-filter="fullstack">Full-Stack & Backend</button>
                     <button class="filter-btn" data-filter="forecasting">Time-Series & Forecasting</button>
                     <button class="filter-btn" data-filter="ml">Machine Learning</button>
                 </div>
                 
                 <div class="projects-grid">
-                    <!-- Fork & Flames – Restaurant Management System -->
-                    <div class="project-card glass" data-category="fullstack">
+                    <!-- Fork & Flames – Restaurant Platform with AI Concierge -->
+                    <div class="project-card glass" data-category="fullstack ai">
                         <div class="project-visual-placeholder">
                             <div class="project-card-icon">
                                 <i class="fas fa-utensils"></i>
@@ -384,30 +403,100 @@
                         </div>
                         <div class="project-info">
                             <div class="project-meta-row">
-                                <span class="project-label">Full-Stack / Backend</span>
-                                <span class="project-date">Mar 2026 – Apr 2026</span>
+                                <span class="project-label">Full-Stack & Generative AI</span>
+                                <span class="project-date">Jan 2026 – Feb 2026</span>
                             </div>
-                            <h3>Fork & Flames – Restaurant Management System</h3>
+                            <h3>Fork & Flames – Full Stack Restaurant Platform with AI Concierge</h3>
                             <p>
-                                Developed a full-stack restaurant management system using <strong>Node.js, Express.js, MongoDB, and REST APIs</strong>, implementing backend services for restaurant operations and multiple user roles. Implemented secure authentication and authorization using <strong>JWT and Role-Based Access Control (RBAC)</strong> to manage permissions across user roles. Containerized the application using <strong>Docker</strong> and tested REST APIs using <strong>Postman</strong> for reliable backend development.
+                                Deployed a full-stack restaurant platform using <strong>Node.js, Express.js, and MongoDB Atlas</strong> with dishes, cart, ordering, table reservations, and an admin dashboard. Built <strong>Flames AI</strong>, a Gemini-powered assistant recommending menu items from customer moods and cravings using live MongoDB menu context, with JSON schema validation and multi-tier fallback (Gemini Flash-Lite &rarr; Flash &rarr; rule-based matcher). Secured with <strong>JWT-based RBAC</strong>, bcryptjs, and Cloudinary.
                             </p>
                             <div class="project-tech">
                                 <span>Node.js</span>
                                 <span>Express.js</span>
-                                <span>MongoDB</span>
+                                <span>MongoDB Atlas</span>
+                                <span>Google Gemini API</span>
                                 <span>REST APIs</span>
                                 <span>JWT & RBAC</span>
-                                <span>Docker</span>
-                                <span>Postman</span>
+                                <span>Cloudinary</span>
+                                <span>Render</span>
                             </div>
                             <div class="project-links">
-                                <a href="https://github.com/RaghavGoyal6046" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="GitHub Source"><i class="fab fa-github"></i> GitHub</a>
+                                <a href="https://fork-flames.onrender.com" target="_blank" rel="noopener noreferrer" class="project-link live" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                                <a href="https://github.com/RaghavGoyal6046/fork-flames" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="GitHub Source"><i class="fab fa-github"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PharmaTrace – FEFO Pharmacy POS & Inventory System -->
+                    <div class="project-card glass" data-category="fullstack">
+                        <div class="project-visual-placeholder">
+                            <div class="project-card-icon">
+                                <i class="fas fa-prescription-bottle-alt"></i>
+                            </div>
+                            <div class="project-glow"></div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-meta-row">
+                                <span class="project-label">Full-Stack / Inventory POS</span>
+                                <span class="project-date">Jun 2026 – Jul 2026</span>
+                            </div>
+                            <h3>PharmaTrace – FEFO Pharmacy POS & Inventory System</h3>
+                            <p>
+                                Engineered a pharmacy POS and inventory management system using <strong>Node.js, Express.js, MySQL, and JavaScript</strong>, featuring medicine catalog management, batch tracking, multi-medicine dispensing, and invoice generation. Devised a <strong>First-Expiry-First-Out (FEFO)</strong> allocation engine prioritizing earliest-expiring batches and excluding expired stock through atomic transactions. Architected a 7-table normalized schema with expiry-date indexing, JWT authentication, and admin/pharmacist RBAC.
+                            </p>
+                            <div class="project-tech">
+                                <span>Node.js</span>
+                                <span>Express.js</span>
+                                <span>MySQL</span>
+                                <span>JavaScript</span>
+                                <span>FEFO Engine</span>
+                                <span>REST APIs</span>
+                                <span>JWT & RBAC</span>
+                                <span>Render</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://auriga-sde1-builder.onrender.com" target="_blank" rel="noopener noreferrer" class="project-link live" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                                <a href="https://github.com/RaghavGoyal6046/Auriga-SDE1-Builder" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="GitHub Source"><i class="fab fa-github"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- RAG-Based Document Q&A System -->
+                    <div class="project-card glass" data-category="ai ml">
+                        <div class="project-visual-placeholder">
+                            <div class="project-card-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <div class="project-glow"></div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-meta-row">
+                                <span class="project-label">Generative AI / RAG</span>
+                                <span class="project-date">Sep 2026 – Oct 2026</span>
+                            </div>
+                            <h3>RAG-Based Document Q&A System</h3>
+                            <p>
+                                Developed an end-to-end <strong>Retrieval-Augmented Generation (RAG)</strong> pipeline for document-based question answering using high-dimensional embeddings, vector similarity search, and Large Language Models. Built a high-performance <strong>FastAPI backend</strong> integrated with <strong>LangChain</strong> for document ingestion, text preprocessing, recursive chunking, information retrieval, and LLM synthesis. Implemented contextual retrieval and prompt engineering to generate document-grounded, accurate responses.
+                            </p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>FastAPI</span>
+                                <span>LangChain</span>
+                                <span>LLMs</span>
+                                <span>Embeddings</span>
+                                <span>Vector Search</span>
+                                <span>Prompt Eng.</span>
+                                <span>Render</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://rag-based-document-qa-system.onrender.com/" target="_blank" rel="noopener noreferrer" class="project-link live" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                                <a href="https://github.com/RaghavGoyal6046/RAG-_BASED_DOCUMENT_QA_SYSTEM" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="GitHub Source"><i class="fab fa-github"></i> GitHub</a>
                             </div>
                         </div>
                     </div>
 
                     <!-- Multi-Series Retail Demand Forecasting -->
-                    <div class="project-card glass" data-category="forecasting">
+                    <div class="project-card glass" data-category="forecasting ml">
                         <div class="project-visual-placeholder">
                             <div class="project-card-icon">
                                 <i class="fas fa-chart-line"></i>
@@ -417,22 +506,24 @@
                         <div class="project-info">
                             <div class="project-meta-row">
                                 <span class="project-label">Time-Series / ML</span>
-                                <span class="project-date">June 2026 – July 2026</span>
+                                <span class="project-date">Jun 2026 – Jul 2026</span>
                             </div>
                             <h3>Multi-Series Retail Demand Forecasting</h3>
                             <p>
-                                Built a multi-series retail demand forecasting pipeline for <strong>500 store-item combinations</strong> using advanced time-series feature engineering (calendar, lag, and rolling-window features). Benchmarked Linear Regression, Random Forest, XGBoost, and LightGBM, achieving <strong>93.72% R²</strong>, MAE of <strong>6.08</strong>, and RMSE of <strong>7.91</strong>. Implemented chronological validation and recursive multi-step prediction for reliable future demand forecasting.
+                                Built an end-to-end forecasting pipeline for <strong>500 store-item combinations</strong> leveraging calendar, lag, and rolling-window feature engineering. Benchmarked Linear Regression, Random Forest, XGBoost, and LightGBM; the top model achieved <strong>93.72% R²</strong>, MAE of <strong>6.08</strong>, and RMSE of <strong>7.91</strong>. Implemented chronological validation and recursive multi-step forecasting deployed on Streamlit Cloud for interactive demand exploration.
                             </p>
                             <div class="project-tech">
                                 <span>Python</span>
+                                <span>Pandas & NumPy</span>
                                 <span>Scikit-learn</span>
                                 <span>XGBoost</span>
                                 <span>LightGBM</span>
-                                <span>Pandas</span>
                                 <span>Time-Series</span>
+                                <span>Streamlit</span>
                             </div>
                             <div class="project-links">
-                                <a href="https://github.com/RaghavGoyal6046" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="GitHub Source"><i class="fab fa-github"></i> GitHub</a>
+                                <a href="https://multi-series-forecasting-for-retail-demand.streamlit.app/" target="_blank" rel="noopener noreferrer" class="project-link live" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                                <a href="https://github.com/RaghavGoyal6046/Multi-Series-Forecasting-for-Retail-Demand-Optimiz-Celebal" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="GitHub Source"><i class="fab fa-github"></i> GitHub</a>
                             </div>
                         </div>
                     </div>
@@ -478,12 +569,12 @@
                         </div>
                         <div class="project-info">
                             <div class="project-meta-row">
-                                <span class="project-label">Machine Learning / Bio</span>
-                                <span class="project-date">June 2025 – July 2025</span>
+                                <span class="project-label">Machine Learning / Biomedical</span>
+                                <span class="project-date">Jun 2025 – Jul 2025</span>
                             </div>
                             <h3>PainMeter – Automatic Pain Level Assessment</h3>
                             <p>
-                                Developed a machine learning pipeline for automatic pain-level classification from physiological signals. Applied preprocessing, feature extraction, and dimensionality reduction to improve feature quality and model performance across Scikit-learn, NumPy, and Pandas.
+                                Developed a machine learning classification pipeline for automatic pain-level assessment from physiological signal datasets. Applied signal preprocessing, domain-specific feature extraction, and dimensionality reduction to improve feature quality and model performance across Scikit-learn, NumPy, and Pandas models.
                             </p>
                             <div class="project-tech">
                                 <span>Python</span>
@@ -493,7 +584,7 @@
                                 <span>Signal Processing</span>
                             </div>
                             <div class="project-links">
-                                <a href="https://github.com/RaghavGoyal6046" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="GitHub Source"><i class="fab fa-github"></i> GitHub</a>
+                                <a href="https://github.com/RaghavGoyal6046/PainMeter-ML-Project" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="GitHub Source"><i class="fab fa-github"></i> GitHub</a>
                             </div>
                         </div>
                     </div>
@@ -528,7 +619,7 @@
                         </div>
                         <div class="cert-info">
                             <h3>Algorithmic Proficiency</h3>
-                            <p>Solved <strong>500+ Data Structures and Algorithms</strong> problems across LeetCode and GeeksforGeeks.</p>
+                            <p>Solved <strong>550+ Data Structures and Algorithms</strong> problems across LeetCode and GeeksforGeeks.</p>
                         </div>
                     </div>
 
